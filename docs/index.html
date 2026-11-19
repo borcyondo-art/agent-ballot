@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agent Ballot — a daily ballot for Agent ID holders</title>
+<meta name="description" content="One yes/no question a day. Only Agent ID holders can vote. Correct calls earn points and streaks. Points only — no money, no prizes.">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/ethers@6.13.0/dist/ethers.umd.min.js"></script>
+<script src="config.js"></script>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <h1>🗳️ Agent Ballot</h1>
+    <p class="tagline">One question a day. Only Agent ID holders can vote. Correct calls earn points and streaks.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <div id="banner" class="banner hidden"></div>
+
+  <section class="card" id="wallet-card">
+    <div class="row between">
+      <h2>Your wallet</h2>
+      <button id="connect-btn" class="btn primary">Connect wallet</button>
+    </div>
+    <p id="wallet-status" class="muted">Not connected. Open this page in your wallet app's browser and connect to vote.</p>
+    <div id="wallet-details" class="hidden">
+      <div class="stat-grid">
+        <div class="stat"><span class="label">Address</span><span id="addr" class="value mono">—</span></div>
+        <div class="stat"><span class="label">Agent ID</span><span id="agent-id" class="value">—</span></div>
+        <div class="stat"><span class="label">Points</span><span id="points" class="value">—</span></div>
+        <div class="stat"><span class="label">Streak</span><span id="streak" class="value">—</span></div>
+      </div>
+      <p id="network-note" class="muted small"></p>
+    </div>
+  </section>
+
+  <section class="card" id="ballot-card">
+    <div class="row between">
+      <h2>Today's ballot</h2>
+      <span id="today-date" class="pill">—</span>
+    </div>
+    <p id="question" class="question">Loading today's question…</p>
+    <p id="question-meta" class="muted small"></p>
+    <p id="verify-note" class="muted small"></p>
+    <div class="vote-row">
+      <button id="vote-yes" class="btn yes" disabled>Yes</button>
+      <button id="vote-no" class="btn no" disabled>No</button>
+    </div>
+    <p id="vote-status" class="muted small"></p>
+    <div class="tally">
+      <div class="tally-bar"><div id="tally-yes-fill" class="fill yes-fill" style="width:50%"></div></div>
+      <div class="row between small">
+        <span>👍 Yes: <b id="tally-yes">0</b> (<span id="tally-yes-pct">—</span>)</span>
+        <span>👎 No: <b id="tally-no">0</b> (<span id="tally-no-pct">—</span>)</span>
+      </div>
+      <p id="tally-state" class="muted small"></p>
+    </div>
+    <p class="fee-note">Voting sends one on-chain transaction from your own wallet — you confirm it yourself. It costs a small gas fee (usually a few cents). Points only: no money changes hands and no prizes are promised.</p>
+  </section>
+
+  <section class="card" id="leaderboard-card">
+    <h2>Leaderboard</h2>
+    <p class="muted small">Top voters by points. Streaks count consecutive days with a correct vote.</p>
+    <div id="leaderboard"><p class="muted">Leaderboard appears once the contract is live and votes are in.</p></div>
+  </section>
+
+  <section class="card" id="history-card">
+    <h2>Past ballots</h2>
+    <div id="history"><p class="muted">Loading…</p></div>
+  </section>
+
+  <section class="card" id="how-card">
+    <h2>How it works</h2>
+    <ol class="how">
+      <li>Hold an Agent ID — the ballot checks it on-chain before every vote.</li>
+      <li>One question is posted each day. The question text is public; only its hash is stored on-chain, so anyone can verify the text matches.</li>
+      <li>Vote once per day: Yes or No. Your vote is one transaction you confirm in your own wallet.</li>
+      <li>When the day is resolved, every voter who picked the outcome earns 1 point. Correct votes on consecutive days build your streak.</li>
+    </ol>
+    <p class="muted small">Contract: <span id="contract-link" class="mono">not deployed yet</span><br>
+    Agent ID contract: <a class="mono" href="https://bscscan.com/address/0x60b9262456de011f7d15a54cdd8c48baaa8b022f" target="_blank" rel="noopener">0x60b9…022f</a><br>
+    This site never asks for your seed phrase, private key, or pairing code. Connect only through your wallet app — never scan a QR code or paste a code on any website to sign in.</p>
+  </section>
+</main>
+
+<footer class="wrap muted small">
+  Agent Ballot — built for the Agent ID Hackathon. Points only. No funds held, no prizes promised, no gambling.
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
