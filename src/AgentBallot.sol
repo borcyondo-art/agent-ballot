@@ -42,9 +42,12 @@ contract AgentBallot {
     error AlreadyVoted();
     error QuestionExists();
 
-    constructor(address agentId_) {
+    /// @dev owner_ is a constructor parameter (not msg.sender) so the
+    ///      contract can be deployed through a factory (e.g. CreateX)
+    ///      while the user's wallet still ends up as owner.
+    constructor(address agentId_, address owner_) {
         agentId = IAgentID(agentId_);
-        owner = msg.sender;
+        owner = owner_;
     }
 
     /// @notice Owner posts one question per day (hash of the question text).

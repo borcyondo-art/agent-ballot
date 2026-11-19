@@ -30,12 +30,12 @@ contract AgentBallotTest is Test {
 
     function setUp() public {
         agentId = new MockAgentID();
-        ballot = new AgentBallot(address(agentId));
+        ballot = new AgentBallot(address(agentId), address(this));
     }
 
     function testDeploymentGas() public {
         uint256 g = gasleft();
-        AgentBallot b = new AgentBallot(address(agentId));
+        AgentBallot b = new AgentBallot(address(agentId), address(this));
         uint256 used = g - gasleft();
         console.log("deployment gas:", used);
         assertEq(b.owner(), address(this));
