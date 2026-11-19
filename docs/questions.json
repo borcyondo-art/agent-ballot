@@ -56,7 +56,98 @@
       "hash": "0x33605ddc49c25bb0abb900676f5b331b9a7df11bf6047246b7ad858ed724d6b3",
       "question": "Will Ethereum close above $3,200 on 26 November 2026?",
       "source": "CoinGecko daily close (UTC) for ETH"
+    },
+    {
+      "date": "2026-11-27",
+      "day": 20784,
+      "hash": "0x62cce1f7d92b8911392482d9101ed51579d389e934527f7bdf47f20b723859f4",
+      "question": "Will Bitcoin close above $105,000 on 27 November 2026?",
+      "source": "CoinGecko daily close (UTC) for BTC"
+    },
+    {
+      "date": "2026-11-28",
+      "day": 20785,
+      "hash": "0x6f92edef7d34c9cd92af510f8983685b3b803cc6644067dcdd5be21ab1c7936f",
+      "question": "Will Ethereum close above $3,100 on 28 November 2026?",
+      "source": "CoinGecko daily close (UTC) for ETH"
+    },
+    {
+      "date": "2026-11-29",
+      "day": 20786,
+      "hash": "0xa0319b048f98e286916859bc8d2232aac98cfe0ea98a97b50a87fdc5f8b346bb",
+      "question": "Will BNB close above $650 on 29 November 2026?",
+      "source": "CoinGecko daily close (UTC) for BNB"
+    },
+    {
+      "date": "2026-11-30",
+      "day": 20787,
+      "hash": "0x5bb9704292094d78fb753ea0dc8c6e85cf0d738f55716cf01bc26448f256c4bc",
+      "question": "Will Bitcoin close above $100,000 on 30 November 2026?",
+      "source": "CoinGecko daily close (UTC) for BTC"
+    },
+    {
+      "date": "2026-12-01",
+      "day": 20788,
+      "hash": "0x8ec676359fa2fc48931446129f5691ec3b48063e4676398844a0284f05225cc5",
+      "question": "Will the total crypto market cap close above $3.6 trillion on 1 December 2026?",
+      "source": "CoinGecko global market cap, daily close (UTC)"
+    },
+    {
+      "date": "2026-12-02",
+      "day": 20789,
+      "hash": "0x4e01eed74e941756f5fa0eb081d32f206cf11a51445501517e9e8a18c1cb606a",
+      "question": "Will Bitcoin's 24h trading volume exceed $60 billion on 2 December 2026?",
+      "source": "CoinGecko 24h volume for BTC"
+    },
+    {
+      "date": "2026-12-03",
+      "day": 20790,
+      "hash": "0xe712cf9fb773f437c58eba3603c4df35fa1770f2c0b6c8485c34c2e28e5e39de",
+      "question": "Will Ethereum close higher than it opened on 3 December 2026?",
+      "source": "CoinGecko daily open vs close (UTC) for ETH"
+    },
+    {
+      "date": "2026-12-04",
+      "day": 20791,
+      "hash": "0x7747a27aeed0ee3683303c7fb46dd08baf3af51838a0b0532dd776074a0dec01",
+      "question": "Will Bitcoin close above $110,000 on 4 December 2026?",
+      "source": "CoinGecko daily close (UTC) for BTC"
+    },
+    {
+      "date": "2026-12-05",
+      "day": 20792,
+      "hash": "0x12f6ee2d2e6f86c7117532c64311c0d4375a6e1db5752b3994fb26af787b3a0b",
+      "question": "Will BNB close above $700 on 5 December 2026?",
+      "source": "CoinGecko daily close (UTC) for BNB"
+    },
+    {
+      "date": "2026-12-06",
+      "day": 20793,
+      "hash": "0x9a759f3016cecdd352ffdd684b29c4a69d0202467109a043a2c2b4d9de246979",
+      "question": "Will Bitcoin close above $105,000 on 6 December 2026?",
+      "source": "CoinGecko daily close (UTC) for BTC"
+    },
+    {
+      "date": "2026-12-07",
+      "day": 20794,
+      "hash": "0x8186b1c02e63ea0f5660eb4dd3336449dccabc556c41b86bbf539e5e7a77f035",
+      "question": "Will Ethereum close above $3,500 on 7 December 2026?",
+      "source": "CoinGecko daily close (UTC) for ETH"
+    },
+    {
+      "date": "2026-12-08",
+      "day": 20795,
+      "hash": "0x60da948042354676008c387165f123360119e096b06e2aa78eaa9810672b4f7b",
+      "question": "Will the total crypto market cap close above $3.8 trillion on 8 December 2026?",
+      "source": "CoinGecko global market cap, daily close (UTC)"
+    },
+    {
+      "date": "2026-12-09",
+      "day": 20796,
+      "hash": "0x78504c651ac3d871ba26943d8c4050b441f102b0af8fee4b803901b45b7e5a1b",
+      "question": "Will Bitcoin close higher than it opened on 9 December 2026?",
+      "source": "CoinGecko daily open vs close (UTC) for BTC"
     }
   ],
-  "version": 1
+  "version": 2
 }
