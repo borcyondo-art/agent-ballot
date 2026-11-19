@@ -4,8 +4,8 @@
 // Until then the site runs in preview mode: questions are shown, but the
 // vote buttons stay disabled and a banner says the contract is not live yet.
 const CONFIG = {
-  CONTRACT_ADDRESS: "", // e.g. "0x..." — set after deploy
-  DEPLOY_BLOCK: 0, // block the contract was deployed in — set after deploy
+  CONTRACT_ADDRESS: "0xa72c401483ecc00a63b01ee36695748a82220e48", // e.g. "0x..." — set after deploy
+  DEPLOY_BLOCK: 134470279, // block the contract was deployed in — set after deploy
   CHAIN_ID: 56, // BNB Chain mainnet
   CHAIN_NAME: "BNB Chain",
   AGENT_ID_ADDRESS: "0x60b9262456de011f7d15a54cdd8c48baaa8b022f",
